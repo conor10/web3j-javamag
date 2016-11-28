@@ -22,7 +22,7 @@ public class TransferEther {
                 "my password", "/path/to/walletfile");
         TransactionReceipt transactionReceipt = Transfer.sendFundsAsync(
                 web3, credentials, "0x...", BigDecimal.valueOf(0.2), Convert.Unit.ETHER).get();
-        System.out.println("Funds transfer completed, tx hash: "
+        System.out.println("Funds transfer completed, transaction hash: "
                 + transactionReceipt.getTransactionHash() +  ", block number: " +
                 transactionReceipt.getBlockNumber());
     }

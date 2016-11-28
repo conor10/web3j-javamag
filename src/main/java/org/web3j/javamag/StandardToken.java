@@ -19,7 +19,7 @@ import org.web3j.protocol.http.HttpService;
  * Simplified version of <a href="https://github.com/web3j/web3j/blob/master/src/integration-test/java/org/web3j/protocol/scenarios/HumanStandardTokenGeneratedIT.java">
  * HumanStandardTokenGeneratedIT</a>.
  */
-public class StandardTokenExample {
+public class StandardToken {
 
     private static final BigInteger GAS_PRICE = BigInteger.valueOf(50_000_000_000L);
     private static final BigInteger GAS_LIMIT = BigInteger.valueOf(2_000_000);

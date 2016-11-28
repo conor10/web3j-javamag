@@ -12,7 +12,7 @@ import org.web3j.protocol.http.HttpService;
 /**
  * Demonstrate the Greeter Solidity smart contract.
  */
-public class GreeterExample {
+public class HelloWorld {
 
     private static final BigInteger GAS_PRICE = BigInteger.valueOf(50_000_000_000L);
     private static final BigInteger GAS_LIMIT = BigInteger.valueOf(2_000_000);
