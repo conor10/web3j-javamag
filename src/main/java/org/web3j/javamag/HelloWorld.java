@@ -14,8 +14,8 @@ import org.web3j.protocol.http.HttpService;
  */
 public class HelloWorld {
 
-    private static final BigInteger GAS_PRICE = BigInteger.valueOf(50_000_000_000L);
-    private static final BigInteger GAS_LIMIT = BigInteger.valueOf(2_000_000);
+    private static final BigInteger GAS_PRICE = BigInteger.valueOf(20_000_000_000L);
+    private static final BigInteger GAS_LIMIT = BigInteger.valueOf(4_300_000);
 
     public static void main(String[] args) throws Exception {
         Web3j web3 = Web3j.build(new HttpService());  // defaults to http://localhost:8545/
@@ -29,6 +29,6 @@ public class HelloWorld {
                 .get();
 
         Utf8String greeting = contract.greet().get();
-        System.out.println(greeting.getTypeAsString());
+        System.out.println(greeting.getValue());
     }
 }

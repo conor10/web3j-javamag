@@ -1,10 +1,10 @@
 package org.web3j.javamag.generated;
 
+import java.lang.String;
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.concurrent.Future;
-
 import org.web3j.abi.Contract;
 import org.web3j.abi.FunctionEncoder;
 import org.web3j.abi.TypeReference;
@@ -33,8 +33,8 @@ public final class Greeter extends Contract {
     }
 
     public Future<Utf8String> greet() {
-        Function function = new Function("greet",
-                Arrays.<Type>asList(),
+        Function function = new Function("greet", 
+                Arrays.<Type>asList(), 
                 Arrays.<TypeReference<?>>asList(new TypeReference<Utf8String>() {}));
         return executeCallSingleValueReturnAsync(function);
     }
